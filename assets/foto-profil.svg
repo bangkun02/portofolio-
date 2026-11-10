@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 720">
+  <!-- Placeholder: ganti dengan foto kamu (disarankan PNG/WebP background transparan, potret setengah badan) -->
+  <defs>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3b5bdb"/>
+      <stop offset="1" stop-color="#1e2a5a"/>
+    </linearGradient>
+    <linearGradient id="skin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d9b59a"/>
+      <stop offset="1" stop-color="#b98e72"/>
+    </linearGradient>
+  </defs>
+  <path d="M40 720 C60 560 170 492 300 492 C430 492 540 560 560 720 Z" fill="url(#body)"/>
+  <path d="M250 492 L300 600 L350 492 Z" fill="#f1f5f9"/>
+  <rect x="258" y="400" width="84" height="110" rx="30" fill="#b98e72"/>
+  <ellipse cx="300" cy="320" rx="108" ry="128" fill="url(#skin)"/>
+  <path d="M190 300 C182 200 236 160 304 160 C380 160 420 210 410 300 C396 250 360 226 300 228 C246 230 206 250 190 300 Z" fill="#1c1917"/>
+  <circle cx="262" cy="330" r="7" fill="#1c1917"/>
+  <circle cx="338" cy="330" r="7" fill="#1c1917"/>
+  <path d="M270 388 C290 402 312 402 330 388" stroke="#7c4a3a" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <text x="300" y="680" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#fff" opacity=".8">Ganti foto ini</text>
+</svg>

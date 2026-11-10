@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900"><defs>
+<linearGradient id="floor" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1b1f2d"/><stop offset=".18" stop-color="#0c0e16"/><stop offset="1" stop-color="#040509"/></linearGradient>
+<linearGradient id="glass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cfe0ff" stop-opacity=".16"/><stop offset="1" stop-color="#cfe0ff" stop-opacity=".04"/></linearGradient>
+<linearGradient id="sheen" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".13"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+<radialGradient id="lamp"><stop offset="0" stop-color="#ffd27a" stop-opacity=".7"/><stop offset=".4" stop-color="#ffb35c" stop-opacity=".2"/><stop offset="1" stop-color="#ffb35c" stop-opacity="0"/></radialGradient>
+</defs>
+<rect x="-10" y="690" width="1620" height="92" fill="url(#glass)"/>
+<path d="M120 692 L190 692 L140 780 L70 780 Z" fill="url(#sheen)"/>
+<path d="M520 692 L590 692 L540 780 L470 780 Z" fill="url(#sheen)"/>
+<path d="M980 692 L1050 692 L1000 780 L930 780 Z" fill="url(#sheen)"/>
+<path d="M1380 692 L1450 692 L1400 780 L1330 780 Z" fill="url(#sheen)"/>
+<rect x="-10" y="684" width="6" height="98" fill="#141722"/>
+<rect x="190" y="684" width="6" height="98" fill="#141722"/>
+<rect x="390" y="684" width="6" height="98" fill="#141722"/>
+<rect x="590" y="684" width="6" height="98" fill="#141722"/>
+<rect x="790" y="684" width="6" height="98" fill="#141722"/>
+<rect x="990" y="684" width="6" height="98" fill="#141722"/>
+<rect x="1190" y="684" width="6" height="98" fill="#141722"/>
+<rect x="1390" y="684" width="6" height="98" fill="#141722"/>
+<rect x="1590" y="684" width="6" height="98" fill="#141722"/>
+<rect x="-10" y="682" width="1620" height="9" rx="2" fill="#1a1e2c"/>
+<rect x="-10" y="682" width="1620" height="1.6" fill="#ffd7a0" opacity=".55"/>
+<path d="M-10 780 L1610 780 L1610 900 L-10 900 Z" fill="url(#floor)"/>
+<rect x="-10" y="779" width="1620" height="3" fill="#2b3044"/>
+<path d="M-235.3 780 L-800 900 M-138.2 780 L-650 900 M-41.2 780 L-500 900 M55.9 780 L-350 900 M152.9 780 L-200 900 M250 780 L-50 900 M347.1 780 L100 900 M444.1 780 L250 900 M541.2 780 L400 900 M638.2 780 L550 900 M735.3 780 L700 900 M832.4 780 L850 900 M929.4 780 L1000 900 M1026.5 780 L1150 900 M1123.5 780 L1300 900 M1220.6 780 L1450 900 M1317.6 780 L1600 900 M1414.7 780 L1750 900 M1511.8 780 L1900 900 M1608.8 780 L2050 900 M1705.9 780 L2200 900 M1802.9 780 L2350 900" stroke="#000" stroke-opacity=".4" stroke-width="2"/>
+<path d="M-10 830 L1610 830 M-10 870 L1610 870" stroke="#000" stroke-opacity=".25" stroke-width="2"/>
+<ellipse cx="100" cy="782" rx="60" ry="18" fill="url(#lamp)"/><rect x="94" y="777" width="12" height="4" rx="2" fill="#ffe2a8"/>
+<ellipse cx="300" cy="782" rx="60" ry="18" fill="url(#lamp)"/><rect x="294" y="777" width="12" height="4" rx="2" fill="#ffe2a8"/>
+<ellipse cx="500" cy="782" rx="60" ry="18" fill="url(#lamp)"/><rect x="494" y="777" width="12" height="4" rx="2" fill="#ffe2a8"/>
+<ellipse cx="700" cy="782" rx="60" ry="18" fill="url(#lamp)"/><rect x="694" y="777" width="12" height="4" rx="2" fill="#ffe2a8"/>
+<ellipse cx="900" cy="782" rx="60" ry="18" fill="url(#lamp)"/><rect x="894" y="777" width="12" height="4" rx="2" fill="#ffe2a8"/>
+<ellipse cx="1100" cy="782" rx="60" ry="18" fill="url(#lamp)"/><rect x="1094" y="777" width="12" height="4" rx="2" fill="#ffe2a8"/>
+<ellipse cx="1300" cy="782" rx="60" ry="18" fill="url(#lamp)"/><rect x="1294" y="777" width="12" height="4" rx="2" fill="#ffe2a8"/>
+<ellipse cx="1500" cy="782" rx="60" ry="18" fill="url(#lamp)"/><rect x="1494" y="777" width="12" height="4" rx="2" fill="#ffe2a8"/>
+</svg>

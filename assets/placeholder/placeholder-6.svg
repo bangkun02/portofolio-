@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3f6212"/><stop offset="1" stop-color="#eab308"/></linearGradient></defs>
+<rect width="800" height="500" fill="url(#g)"/>
+<circle cx="680" cy="80" r="160" fill="#fff" opacity=".08"/>
+<circle cx="90" cy="460" r="200" fill="#fff" opacity=".06"/>
+<rect x="120" y="100" width="560" height="290" rx="18" fill="#fff" opacity=".12"/>
+<rect x="150" y="130" width="220" height="18" rx="9" fill="#fff" opacity=".5"/>
+<rect x="150" y="162" width="160" height="12" rx="6" fill="#fff" opacity=".3"/>
+<rect x="150" y="220" width="230" height="140" rx="12" fill="#fff" opacity=".18"/>
+<rect x="400" y="220" width="250" height="64" rx="12" fill="#fff" opacity=".18"/>
+<rect x="400" y="296" width="250" height="64" rx="12" fill="#fff" opacity=".18"/>
+<text x="400" y="452" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#fff" opacity=".85">Ganti gambar ini (6)</text>
+</svg>

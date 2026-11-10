@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="mt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b3c3d9"/>
+      <stop offset=".5" stop-color="#7189a8"/>
+      <stop offset="1" stop-color="#3a4d69"/>
+    </linearGradient>
+    <linearGradient id="shade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1a253c" stop-opacity="0"/>
+      <stop offset="1" stop-color="#1a253c" stop-opacity=".6"/>
+    </linearGradient>
+    <linearGradient id="snow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#cddaee"/>
+    </linearGradient>
+    <linearGradient id="mist" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9fb2cc" stop-opacity="0"/>
+      <stop offset="1" stop-color="#9fb2cc" stop-opacity=".5"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#131925"/>
+      <stop offset=".2" stop-color="#090c13"/>
+      <stop offset="1" stop-color="#04060b"/>
+    </linearGradient>
+  </defs>
+  <!-- pegunungan jauh -->
+  <path d="M0 615 L90 560 L170 586 L260 520 L340 566 L420 540 L540 605 L540 700 L0 700 Z" fill="#40557a" opacity=".8"/>
+  <path d="M1060 605 L1180 545 L1260 572 L1350 508 L1440 560 L1520 530 L1600 572 L1600 700 L1060 700 Z" fill="#40557a" opacity=".8"/>
+  <!-- gunung utama -->
+  <path d="M180 662 L330 576 L420 586 L520 488 L600 452 L690 380 L750 350 L812 318 L872 338 L940 372 L1020 430 L1110 468 L1190 525 L1300 566 L1460 652 L1460 720 L180 720 Z" fill="url(#mt)"/>
+  <path d="M812 318 L872 338 L940 372 L1020 430 L1110 468 L1190 525 L1300 566 L1460 652 L1460 720 L820 720 L860 560 L840 430 Z" fill="url(#shade)"/>
+  <path d="M600 452 L690 380 L750 350 L812 318 L872 338 L940 372 L1020 430 L1110 468 L1060 476 L1010 455 L975 470 L930 432 L890 452 L860 410 L825 448 L790 405 L748 440 L715 418 L670 462 L640 450 Z" fill="url(#snow)" opacity=".95"/>
+  <path d="M748 440 L735 522 L762 470 Z M825 448 L815 560 L846 480 Z M930 432 L952 522 L956 455 Z M1010 455 L1052 522 L1036 470 Z M670 462 L630 540 L682 480 Z M890 452 L880 510 L902 470 Z" fill="#dfe8f6" opacity=".7"/>
+  <rect x="0" y="520" width="1600" height="150" fill="url(#mist)"/>
+  <!-- punggung bukit tempat berdiri (tinggi tanah di tengah ≈ y 637) -->
+  <path d="M0 656 C120 641 220 649 340 643 C470 637 560 651 700 641 C780 636 820 635 900 640 C1040 650 1140 637 1260 645 C1400 653 1500 641 1600 647 L1600 900 L0 900 Z" fill="url(#ground)"/>
+  <path d="M0 656 C120 641 220 649 340 643 C470 637 560 651 700 641 C780 636 820 635 900 640 C1040 650 1140 637 1260 645 C1400 653 1500 641 1600 647" fill="none" stroke="#7d90b4" stroke-opacity=".35" stroke-width="2"/>
+</svg>
