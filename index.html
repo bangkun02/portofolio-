@@ -1,0 +1,169 @@
+﻿<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portofolio</title>
+  <meta name="description" content="">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- angka ?v= dinaikkan setiap file CSS/JS diubah, supaya browser tidak memakai versi lama dari cache -->
+  <link rel="stylesheet" href="css/style.css?v=9">
+</head>
+<body class="is-loading">
+  <!-- Isi halaman diambil dari data.js — tidak perlu mengedit file ini -->
+
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <div class="loader-name" id="loaderName"></div>
+      <div class="loader-bar"><span id="loaderBar"></span></div>
+      <div class="loader-pct" id="loaderPct">0%</div>
+    </div>
+  </div>
+
+  <canvas id="topo" aria-hidden="true"></canvas>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <div class="nav-wrap" id="navWrap">
+    <nav class="nav" id="nav" aria-label="Navigasi utama">
+      <span class="nav-indicator" id="navIndicator"></span>
+      <span class="mascot" id="mascot" aria-hidden="true">
+        <span class="mascot-face"><span class="eyes"><span class="eye"></span><span class="eye"></span></span><span class="mouth"></span></span>
+      </span>
+      <a href="#home" data-nav="home" class="active">Home</a>
+      <a href="#about" data-nav="about">About</a>
+      <a href="#portfolio" data-nav="portfolio">Portfolio</a>
+      <a href="#contact" data-nav="contact">Contact</a>
+    </nav>
+  </div>
+
+  <main>
+    <!-- ================= HERO ================= -->
+    <section id="home" class="hero">
+      <div class="hero-sticky" id="heroSticky">
+        <div class="layer l-sky"><img id="heroSky" alt=""></div>
+        <div class="layer l-title">
+          <h1 class="hero-title"><span class="ht-small" id="heroSmall"></span><span class="ht-big" id="heroBig"></span></h1>
+        </div>
+        <div class="layer l-mountain"><img id="heroScene" alt=""></div>
+        <div class="layer l-person"><img id="heroPerson" alt=""></div>
+        <div class="layer l-forest"><img id="heroFront" alt=""><div class="fireflies" id="fireflies"></div></div>
+        <div class="hero-fade"></div>
+        <div class="scroll-hint"><span>Scroll</span><i></i></div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section id="about" class="about">
+      <h2 class="section-title" id="aboutTitle">About Me</h2>
+
+      <div class="about-grid" id="aboutGrid">
+        <div class="about-left">
+          <p class="hi" id="greeting"></p>
+          <h3 class="name"><span class="split-line" id="nameFirst"></span><span class="split-line" id="nameLast"></span></h3>
+          <p class="role reveal" id="role"></p>
+          <a class="btn reveal" id="cvBtn" target="_blank" rel="noopener"></a>
+        </div>
+        <div class="about-photo" id="aboutPhoto">
+          <div class="ph-glow"></div>
+          <img class="ph-base" id="photoBase" alt="">
+          <img class="ph-color" id="photoColor" alt="">
+        </div>
+        <div class="about-right">
+          <p class="reveal" id="aboutText"></p>
+          <a class="btn reveal" href="#pfContent" data-scroll id="projBtn"></a>
+        </div>
+      </div>
+
+      <div class="timelines">
+        <div class="tl-col">
+          <h3 class="tl-head reveal">Education</h3>
+          <div class="tl-wrap"><span class="tl-line"></span><ol class="tl" id="eduList"></ol></div>
+        </div>
+        <div class="tl-col">
+          <h3 class="tl-head reveal">Experience</h3>
+          <div class="tl-wrap"><span class="tl-line"></span><ol class="tl" id="expList"></ol></div>
+        </div>
+      </div>
+
+      <div class="skills" id="skills"></div>
+
+      <div class="folders" id="folders"></div>
+    </section>
+
+    <!-- ================= PORTFOLIO ================= -->
+    <section id="portfolio">
+      <div class="pf-intro" id="pfIntro">
+        <div class="pf-sticky">
+          <div class="pf-reveal" id="pfReveal"></div>
+          <h2 class="pf-big" id="pfBig"></h2>
+        </div>
+      </div>
+
+      <div class="pf-content" id="pfContent">
+        <div class="pf-head">
+          <h2 class="section-title" id="pfTitle">Portofolio</h2>
+          <span class="pf-arrow" id="pfArrow"></span>
+        </div>
+        <div class="tabs" id="tabs" role="tablist"></div>
+        <div class="carousel">
+          <button class="car-btn prev" id="carPrev" type="button" aria-label="Sebelumnya"></button>
+          <div class="car-track" id="track"></div>
+          <button class="car-btn next" id="carNext" type="button" aria-label="Berikutnya"></button>
+        </div>
+      </div>
+
+      <div class="gallery-wrap" id="galleryWrap">
+        <h2 class="section-title" id="galleryTitle">Galeri</h2>
+        <p class="gallery-hint">Geser fotonya — bisa di-drag 👋</p>
+        <div class="gallery" id="gallery"></div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" class="contact">
+      <h2 class="contact-big" id="contactTitle"></h2>
+      <div class="contact-grid">
+        <form class="card contact-form reveal" id="contactForm">
+          <h3>Hubungi</h3>
+          <p id="contactText"></p>
+          <label class="field"><span class="field-ic" data-icon="user"></span><input name="name" placeholder="Nama Anda" required autocomplete="name"></label>
+          <label class="field"><span class="field-ic" data-icon="mail"></span><input name="email" type="email" placeholder="Email Anda" required autocomplete="email"></label>
+          <label class="field"><span class="field-ic" data-icon="message"></span><textarea name="message" placeholder="Pesan Anda" required></textarea></label>
+          <button class="btn btn-block" type="submit" id="sendBtn"></button>
+        </form>
+        <div class="card socials reveal">
+          <p class="eyebrow">Find Me</p>
+          <h3>Let's Connect</h3>
+          <div id="socialList"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><p id="footer"></p></footer>
+
+  <div class="modal" id="modal" hidden>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle" data-lenis-prevent>
+      <button class="modal-close" id="modalClose" type="button" aria-label="Tutup"></button>
+      <img id="modalImg" alt="">
+      <div class="modal-body">
+        <p class="modal-meta" id="modalMeta"></p>
+        <h3 id="modalTitle"></h3>
+        <p id="modalDesc"></p>
+        <div class="modal-tags" id="modalTags"></div>
+        <div class="modal-links" id="modalLinks"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="data.js?v=9"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="js/topo.js?v=9"></script>
+  <script src="js/hero3d.js?v=9"></script>
+  <script src="js/main.js?v=9"></script>
+</body>
+</html>
